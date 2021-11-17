@@ -1,7 +1,13 @@
-# Seattle-Real-Estate-Advice
-This repository uses statistical analysis and multiple linear regression modeling to analyze house sales in King County, Washington for Real Estate Companies to use and advise their customers whether they are looking for a home or thinking of listing theirs.  
-## Business Understanding
-The assumptions here is that you, King County's top real estate firm, have to deal with customers who could either come in wanting to buy a house or sell their own. The problem now is to see how to accurately value the sellers home based on its specifications as well as give a price to the wants of the buyer.  
+# King County Real Estate Advice
+## Overview
+This project uses statistical analysis and multiple linear regression modeling to analyze housing data in King County, Washington. The purpose of this project is to provide an accurate model for Seattle based, Every Door Real Estate Company, that can be used to advise their clients on both sales and purchases of residential real estate in King County.
+## Business Problem & Key Questions
+As a real estate agency firm, their primary role is to connect potential buyers and sellers of real estate properties. It is therefore imperative that they provide an accurate information and services to their clients and ensure both parties consent on a fair property price.
+
+* *Which features significantly influence the overall value of the house?
+* *How significant are the locations of the house within King County?
+* *Is it possible to predict the housing price based on its features?
+* *How can Every Door Real Estate Company utilize this model to increase their profit? 
 ## Data Understanding
 
 ## Modeling
