@@ -10,7 +10,7 @@ As a real estate agency firm, their primary role is to connect potential buyers 
 * How can Every Door Real Estate Company utilize this model to increase their profit? 
 ## Data Understanding
 The following dataset was given and used to build the model.
-data/kc_house_data.csv
+* data/kc_house_data.csv
 
 The dataset was provided to allow for deep exploration into King County's housing data. The dataset included specs for over 21,000 homes with giving their square footage, rating of construction quality, number of bedrooms and bathrooms and most importantly their price.
 
