@@ -21,10 +21,10 @@ SimpleImputer to deal with missing values in our waterfront amd view columns.
 OneHotEncoder to deal with non continous categorical columns and creating a binary column for each category that was represented in the column as a value.
 
 Seeing that our target is our price column we tried to see which columns had a positive and substantial correlation to it. 
-sqft_living 
-bathrooms 
-grade_num
-bedrooms
+* sqft_living 
+* bathrooms 
+* grade_num
+* bedrooms
 
 
 
