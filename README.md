@@ -29,5 +29,10 @@ Seeing that our target is our price column we tried to see which columns had a p
 
 
 ## Modeling
+The modeling is divided into two parts: inferential and predictive. 
+1) inferential modeling
+2) predictive modeling 
+
+
 ## Regression Results
 ## Recommendations and Conclusions
