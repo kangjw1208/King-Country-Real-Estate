@@ -12,34 +12,40 @@ As a real estate agency firm, their primary role is to connect potential buyers 
 The following dataset was given and used to build the model.
 * data/kc_house_data.csv
 
-The dataset was provided to allow for deep exploration into King County's housing data. The dataset included specs for over 21,000 homes with giving their square footage, rating of construction quality, number of bedrooms and bathrooms and most importantly their price. Data was collected from home sales in 2014-2015.
+The dataset was provided to allow for deep exploration into King County's housing data. The dataset included specs for over 21,000 homes with giving their square footage, rating of construction quality, number of bedrooms and bathrooms and most importantly their price.
 
-After some exploratory data analysis it was deemed the data wasn't in a state the would give out proper models instantly with some columns not being in a managable numeric value and others missing data. Also was determined many columns would not be useful in future model creation and they were not included in our working dataframe.
+After some exploratory data analysis it was deemed the data wasn't in a state the would give out proper models instantly with some columns not being in a managable numeric value and others missing data. Also was determined many columns would not be useful in future model creation they were not included in our working dataframe.
 
 Heavy use of the efficient tools within scikit-learn's library allowed us to manage the data to allow for model creation down the  line. 
 SimpleImputer to deal with missing values in our waterfront amd view columns.
-OneHotEncoder to deal with non continous categorical columns and creating a binary column for each category that was represented in the column as a value.
-We also removed outliers from the dataset based on the 95% Interquartile range.
-
-Seeing that our target is our price column we tried to see which columns had a positive and substantial correlation to it. 
+OneHotEncoder to deal with non continous categorical features and creating columns for each category of that feature that was represented in the column as a value of 0 or 1 in reference on whther that house had that spcific feature column or not.
 
 
 
 
 ## Modeling
 The modeling is divided into two parts: inferential and predictive. 
-1) predictive modeling
-2) inferential modeling 
+1) inferential modeling
+2) predictive modeling 
 
-### Predictive Modeling
-We first created a baseline model using DummyRegressor from scikit-learn. We then created a simple regression model based on the top correlated feature with price (sqft_living). For our predictive model we log transformed price in order to help account for heteroskedasticity within the dataset. We also scaled sqft_living using scikit-learn's StandardScaler. Our simple model was then iterated over to produce subsequently better predictive models. We added in features to test their effects on the model. Our final model (M8) includes:
-* sqft_living
-* presence of waterfront
-* presence of basement
-* zip code
-* quality of view
-* condition of house
-* number of floors
+
+* The goal of our inferential model is to estimate an association between the price and other features and understand their relationship.
+* The goal of our prediction model is to achieve the 'best' model to predict our target price with high accuracy and low error. Pretty much getting to the idea of predicting price given certain parameters such as number of floors or whether it's view is avergae or excellent.
+
+As to deal with heteroscesdsitdy we made the decision to log transform our target variable, price.
+
+
+Seeing that our target is our log_price column we tried to see which columns had a positive and substantial correlation to it. 
+* sqft_living 
+* bathrooms 
+* grade_num
+* bedrooms
+
+These features had a strong individual correlation to our target, log_price, but sqft_living had the highest value so it was deemed as the right feature to be the one to be put into our simple model.
+With Y as our target and X our housing feature.(Y=price, X =sqft_living).
+After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
+Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
+
 
 ## Regression Results
 ## Recommendations and Conclusions
