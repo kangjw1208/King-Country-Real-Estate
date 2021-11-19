@@ -102,5 +102,6 @@ Since grade_num was highly correlated to sqft_living we deemed it to be correct 
 Our adjusted R-sqaured value from the inferential model came to be (   )
 The coefficient numbers relates to
 
-## Regression Results
 ## Recommendations and Conclusions
+
+
