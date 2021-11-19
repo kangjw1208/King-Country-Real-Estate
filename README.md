@@ -47,14 +47,14 @@ With Y as our target and X our housing feature.(Y=price, X =sqft_living).
 
 After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
 
-Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
+Finally we calculated the value for our predicted model and determined our regression scores as well as mean squared error for train and test.
 
-This simple model gave us values for our Train data of (   ) and our Test data of (  ). These low values show that there is much improvement that can be done to the model.
+This simple model gave us values for our Train data of (~.38147061) and our Test data of (~.37977233). These low values show that there is much improvement that can be done to the model.
 
 #### Multi-Feature Model
 With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply multiple features to our models to get a more accurate model. 
 ##### Multi-Feature-Model 1 Price with Sqft_living and View
-After repeating the steps for the regression like in the simple regression but with two features being apllied we get values for our Train data of (    ) and for our Test data of (    ). So we see that our model has improved over our simple so it shows adding more features to our model improves it.
+After repeating the steps for the regression like in the simple regression but with two features being apllied we get values for our Train data of (~.41453618) and for our Test data of (~.41423440). So we see that our model has improved over our simple so it shows adding more features to our model improves it.
 ##### Multi-Feature-Model 8
 After many iterations (7 more in total) we get to our final model(8) where in our model we included the following features
 * sqft_living
@@ -64,8 +64,11 @@ After many iterations (7 more in total) we get to our final model(8) where in ou
 * waterfront
 * view(encoded)
 * condition(encoded)
+* grade_num(encoded)
+* bathrooms(encoded)
+* bedrooms(encoded)
 
-The model produced scores for our Train data of (   ) and for our Test data of (   ). This was the best model that we were able to produce it gives a fair amount of accuracy with reference to price
+The model produced scores for our Train data of (~.85896066) and for our Test data of (~.85536786). This was the best model that we were able to produce it gives a fair amount of accuracy with reference to price
 
 ![Screenshot 2021-11-19 114436](https://user-images.githubusercontent.com/92402366/142659982-4a4f847a-6810-40bb-9ff0-2cbb4bccb00b.png)
 
@@ -76,9 +79,10 @@ The model produced scores for our Train data of (   ) and for our Test data of (
 
 The features that were included in our inferential model were as follows
 
-*
-*
-*
+* sqft_living
+* waterfront
+* view
+* zipcode
 (next to each of the features are their coefficient numbers)
 
 Since grade_num was highly correlated to sqft_living we deemed it to be correct to exclude it from the inferential model.
