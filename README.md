@@ -99,7 +99,7 @@ The features that were included in our inferential model were as follows
 
 Since grade_num was highly correlated to sqft_living we deemed it to be correct to exclude it from the inferential model.
 
-Our adjusted R-sqaured value from the inferential model came to be (   )
+Our adjusted R-sqaured value from the inferential model came to be (.78)
 The coefficient numbers relates to
 
 ## Recommendations and Conclusions
