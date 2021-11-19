@@ -67,6 +67,7 @@ After many iterations (7 more in total) we get to our final model(8) where in ou
 
 The model produced scores for our Train data of (   ) and for our Test data of (   ). This was the best model that we were able to produce it gives a fair amount of accuracy with reference to price
 
+![Screenshot 2021-11-19 114436](https://user-images.githubusercontent.com/92402366/142659982-4a4f847a-6810-40bb-9ff0-2cbb4bccb00b.png)
 
 
 ### Inferential Model
