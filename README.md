@@ -33,6 +33,8 @@ The modeling is divided into two parts: inferential and predictive.
 1) predictive modeling
 2) inferential modeling 
 
+### Predictive Modeling
+
 
 ## Regression Results
 ## Recommendations and Conclusions
