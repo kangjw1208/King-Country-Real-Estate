@@ -67,7 +67,7 @@ The model produced scores for our Train data of (   ) and for our Test data of (
 
 
 ### Inferential Model
-
+didn't included grade because iy was extremely correlated to square foot living
 
 
 ## Regression Results
