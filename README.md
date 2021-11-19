@@ -25,17 +25,17 @@ OneHotEncoder to deal with non continous categorical features and creating colum
 
 ## Modeling
 The modeling is divided into two parts: inferential and predictive. 
-1) inferential modeling
-2) predictive modeling 
-
+1) Predictive modeling
+2) Inferential modeling
 
 * The goal of our inferential model is to estimate an association between the price and other features and understand their relationship.
-* The goal of our prediction model is to achieve the 'best' model to predict our target price with high accuracy and low error. Pretty much getting to the idea of predicting price given certain parameters such as number of floors or whether it's view is avergae or excellent.
 
+### Predictive Models
+* The goal of our prediction model is to achieve the 'best' model to predict our target price with high accuracy and low error. Pretty much getting to the idea of predicting price given certain parameters such as number of floors or whether it's view is avergae or excellent.
 As to deal with heteroscesdsitdy we made the decision to log transform our target variable, price.
 
 Now with our dataframe fully sorted we created our dummy regressor with price and the log of price. 
-### Simple Regressor
+#### Simple Regressor
 Seeing that our target is our log_price column we tried to see which columns had a positive and substantial correlation to it. 
 * sqft_living 
 * bathrooms 
@@ -48,8 +48,25 @@ After spliting up our variables into two subsets(Train and Test data) we perform
 Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
 This simple model gave us values for our Train data of (   ) and our Test data of (  ). These low values show that there is much improvement that can be done to the model.
 
-### Multi-Feature Model
-With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply other features to our models to get a more predictive
+#### Multi-Feature Model
+With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply other features to our models to get a more accurate model. 
+##### Multi-Feature-Model 1 Price with Sqft_living and View
+After repeating the steps for the regression like in the simple regression but with two features being apllied we get values for our Train data of (    ) and for our Test data of (    ). So we see that our model has improved over our simple so it shows adding more features to our model improves it.
+##### Multi-Feature-Model 8
+After many iterations (7 more in total) we get to our final model(8) where in our model we included the following features
+* sqft_living
+* zipcode(encoded)
+* Basement
+* floors(encoded)
+* waterfront
+* view(encoded)
+* condition(encoded)
+
+The model produced scores for our Train data of (   ) and for our Test data of (   ). This was the best model that we were able to produce it gives a fair amount of accuracy with reference to price
+
+
+
+### Inferential Model
 
 
 
