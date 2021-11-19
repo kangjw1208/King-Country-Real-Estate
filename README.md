@@ -28,7 +28,6 @@ The modeling is divided into two parts: inferential and predictive.
 1) Predictive modeling
 2) Inferential modeling
 
-* The goal of our inferential model is to estimate an association between the price and other features and understand their relationship.
 
 ### Predictive Models
 * The goal of our prediction model is to achieve the 'best' model to predict our target price with high accuracy and low error. Pretty much getting to the idea of predicting price given certain parameters such as number of floors or whether it's view is avergae or excellent.
@@ -43,13 +42,17 @@ Seeing that our target is our log_price column we tried to see which columns had
 * bedrooms
 
 These features had a strong individual correlation to our target, log_price, but sqft_living had the highest value that was not a categorical so it was deemed as the right feature to be the one to be put into our simple model.
+
 With Y as our target and X our housing feature.(Y=price, X =sqft_living).
+
 After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
+
 Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
+
 This simple model gave us values for our Train data of (   ) and our Test data of (  ). These low values show that there is much improvement that can be done to the model.
 
 #### Multi-Feature Model
-With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply other features to our models to get a more accurate model. 
+With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply multiple features to our models to get a more accurate model. 
 ##### Multi-Feature-Model 1 Price with Sqft_living and View
 After repeating the steps for the regression like in the simple regression but with two features being apllied we get values for our Train data of (    ) and for our Test data of (    ). So we see that our model has improved over our simple so it shows adding more features to our model improves it.
 ##### Multi-Feature-Model 8
@@ -67,8 +70,20 @@ The model produced scores for our Train data of (   ) and for our Test data of (
 
 
 ### Inferential Model
-didn't included grade because iy was extremely correlated to square foot living
 
+* The goal of our inferential model is to estimate an association between the price and other features and understand their relationship.
+
+The features that were included in our inferential model were as follows
+
+*
+*
+*
+(next to each of the features are their coefficient numbers)
+
+Since grade_num was highly correlated to sqft_living we deemed it to be correct to exclude it from the inferential model.
+
+Our adjusted R-sqaured value from the inferential model came to be (    )
+The coefficient numbers relates to
 
 ## Regression Results
 ## Recommendations and Conclusions
