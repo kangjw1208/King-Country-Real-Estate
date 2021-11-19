@@ -75,7 +75,7 @@ After many iterations (7 more in total) we get to our final model(8) where in ou
 The model produced scores for our Train data of (~.85896066) and for our Test data of (~.85536786). This was the best model that we were able to produce it gives a fair amount of accuracy with reference to price
 
 ![Screenshot 2021-11-19 114436](https://user-images.githubusercontent.com/92402366/142659982-4a4f847a-6810-40bb-9ff0-2cbb4bccb00b.png)
-We achieved a root-mean-square-error(RSME) of 105,546 rendering that our model isn't a great one.
+We achieved a root-mean-square-error(RSME) of 105,546.
 ![Screenshot 2021-11-19 121343](https://user-images.githubusercontent.com/92402366/142663697-23b84621-3681-4d3b-9d59-1a73013c0f32.png)
 
 ### Inferential Model
@@ -104,5 +104,6 @@ Our adjusted R-sqaured value from the inferential model came to be (.78)
 The coefficient numbers relates to
 
 ## Recommendations and Conclusions
+Through exhausted data cleaning and model creation we deem that the data set given to not have enough within it to allow a proper model to be built that can accurately predict our target, price. With our best predicting model having a mean square error of 105,546 dollars it give way too much unncertainty on price. We have notice that as the price of the homes increase that the amount of error increases therefore limiting the amount of homes our model would be functional. 
 
 
