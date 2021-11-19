@@ -18,13 +18,8 @@ After some exploratory data analysis it was deemed the data wasn't in a state th
 
 Heavy use of the efficient tools within scikit-learn's library allowed us to manage the data to allow for model creation down the  line. 
 SimpleImputer to deal with missing values in our waterfront amd view columns.
-OneHotEncoder to deal with non continous categorical columns and creating a binary column for each category that was represented in the column as a value.
+OneHotEncoder to deal with non continous categorical features and creating columns for each category of that feature that was represented in the column as a value of 0 or 1 in reference on whther that house had that spcific feature column or not.
 
-Seeing that our target is our price column we tried to see which columns had a positive and substantial correlation to it. 
-* sqft_living 
-* bathrooms 
-* grade_num
-* bedrooms
 
 
 
@@ -32,6 +27,30 @@ Seeing that our target is our price column we tried to see which columns had a p
 The modeling is divided into two parts: inferential and predictive. 
 1) inferential modeling
 2) predictive modeling 
+
+
+* The goal of our inferential model is to estimate an association between the price and other features and understand their relationship.
+* The goal of our prediction model is to achieve the 'best' model to predict our target price with high accuracy and low error. Pretty much getting to the idea of predicting price given certain parameters such as number of floors or whether it's view is avergae or excellent.
+
+As to deal with heteroscesdsitdy we made the decision to log transform our target variable, price.
+
+Now with our dataframe fully sorted we created our dummy regressor with price and the log of price. 
+### Simple Regressor
+Seeing that our target is our log_price column we tried to see which columns had a positive and substantial correlation to it. 
+* sqft_living 
+* bathrooms 
+* grade_num
+* bedrooms
+
+These features had a strong individual correlation to our target, log_price, but sqft_living had the highest value so it was deemed as the right feature to be the one to be put into our simple model.
+With Y as our target and X our housing feature.(Y=price, X =sqft_living).
+After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
+Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
+This simple model gave us values for our Train data of (   ) and our Test data of (  ). These low values show that there is much improvement that can be done to the model.
+
+### Multi-Feature Model
+With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply other features to our models to get a more predictive
+
 
 
 ## Regression Results
