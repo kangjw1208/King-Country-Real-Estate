@@ -43,6 +43,10 @@ Seeing that our target is our log_price column we tried to see which columns had
 
 These features had a strong individual correlation to our target, log_price, but sqft_living had the highest value that was not a categorical so it was deemed as the right feature to be the one to be put into our simple model.
 
+
+
+
+
 With Y as our target and X our housing feature.(Y=price, X =sqft_living).
 
 After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
@@ -72,6 +76,7 @@ The model produced scores for our Train data of (~.85896066) and for our Test da
 
 ![Screenshot 2021-11-19 114436](https://user-images.githubusercontent.com/92402366/142659982-4a4f847a-6810-40bb-9ff0-2cbb4bccb00b.png)
 
+![Screenshot 2021-11-19 121343](https://user-images.githubusercontent.com/92402366/142663697-23b84621-3681-4d3b-9d59-1a73013c0f32.png)
 
 ### Inferential Model
 
