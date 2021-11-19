@@ -42,7 +42,7 @@ Seeing that our target is our log_price column we tried to see which columns had
 * grade_num
 * bedrooms
 
-These features had a strong individual correlation to our target, log_price, but sqft_living had the highest value so it was deemed as the right feature to be the one to be put into our simple model.
+These features had a strong individual correlation to our target, log_price, but sqft_living had the highest value that was not a categorical so it was deemed as the right feature to be the one to be put into our simple model.
 With Y as our target and X our housing feature.(Y=price, X =sqft_living).
 After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
 Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
