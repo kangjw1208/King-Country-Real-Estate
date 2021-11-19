@@ -12,9 +12,9 @@ As a real estate agency firm, their primary role is to connect potential buyers 
 The following dataset was given and used to build the model.
 * data/kc_house_data.csv
 
-The dataset was provided to allow for deep exploration into King County's housing data. The dataset included specs for over 21,000 homes with giving their square footage, rating of construction quality, number of bedrooms and bathrooms and most importantly their price.
+The dataset was provided to allow for deep exploration into King County's housing data. The dataset included specs for over 21,000 homes with giving their square footage, rating of construction quality, number of bedrooms and bathrooms and most importantly their price. Data was collected from home sales in 2014-2015.
 
-After some exploratory data analysis it was deemed the data wasn't in a state the would give out proper models instantly with some columns not being in a managable numeric value and others missing data. Also was determined many columns would not be useful in future model creation they were not included in our working dataframe.
+After some exploratory data analysis it was deemed the data wasn't in a state the would give out proper models instantly with some columns not being in a managable numeric value and others missing data. Also was determined many columns would not be useful in future model creation and they were not included in our working dataframe.
 
 Heavy use of the efficient tools within scikit-learn's library allowed us to manage the data to allow for model creation down the  line. 
 SimpleImputer to deal with missing values in our waterfront amd view columns.
@@ -30,8 +30,8 @@ Seeing that our target is our price column we tried to see which columns had a p
 
 ## Modeling
 The modeling is divided into two parts: inferential and predictive. 
-1) inferential modeling
-2) predictive modeling 
+1) predictive modeling
+2) inferential modeling 
 
 
 ## Regression Results
