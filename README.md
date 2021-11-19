@@ -93,8 +93,8 @@ The features that were included in our inferential model were as follows
 * * Average (our reference therefore no coef)
 * * None (-91,010)
 * zipcode
-* * 98039[top zipcode](1,400,000)
-* * 98004[2nd best zipcode](830,000)
+* * 98039 'top zipcode' (1,400,000)
+* * 98004 '2nd best zipcode' (830,000)
 (next to each of the features are their coefficient numbers)
 
 Since grade_num was highly correlated to sqft_living we deemed it to be correct to exclude it from the inferential model.
