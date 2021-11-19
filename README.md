@@ -34,7 +34,8 @@ The modeling is divided into two parts: inferential and predictive.
 
 As to deal with heteroscesdsitdy we made the decision to log transform our target variable, price.
 
-
+Now with our dataframe fully sorted we created our dummy regressor with price and the log of price. 
+### Simple Regressor
 Seeing that our target is our log_price column we tried to see which columns had a positive and substantial correlation to it. 
 * sqft_living 
 * bathrooms 
@@ -45,6 +46,11 @@ These features had a strong individual correlation to our target, log_price, but
 With Y as our target and X our housing feature.(Y=price, X =sqft_living).
 After spliting up our variables into two subsets(Train and Test data) we performed proper scaling to sqft_living as to prepare it for simple linear regression.
 Finally we calculated the value for our predicted model and determined our mean squared error for train and test data.
+This simple model gave us values for our Train data of (   ) and our Test data of (  ). These low values show that there is much improvement that can be done to the model.
+
+### Multi-Feature Model
+With the simple model we just saw how our target, price, was impacted by just sqft_living. But you can you apply other features to our models to get a more predictive
+
 
 
 ## Regression Results
