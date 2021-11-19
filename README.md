@@ -19,12 +19,10 @@ After some exploratory data analysis it was deemed the data wasn't in a state th
 Heavy use of the efficient tools within scikit-learn's library allowed us to manage the data to allow for model creation down the  line. 
 SimpleImputer to deal with missing values in our waterfront amd view columns.
 OneHotEncoder to deal with non continous categorical columns and creating a binary column for each category that was represented in the column as a value.
+We also removed outliers from the dataset based on the 95% Interquartile range.
 
 Seeing that our target is our price column we tried to see which columns had a positive and substantial correlation to it. 
-* sqft_living 
-* bathrooms 
-* grade_num
-* bedrooms
+
 
 
 
@@ -34,7 +32,14 @@ The modeling is divided into two parts: inferential and predictive.
 2) inferential modeling 
 
 ### Predictive Modeling
-
+We first created a baseline model using DummyRegressor from scikit-learn. We then created a simple regression model based on the top correlated feature with price (sqft_living). For our predictive model we log transformed price in order to help account for heteroskedasticity within the dataset. We also scaled sqft_living using scikit-learn's StandardScaler. Our simple model was then iterated over to produce subsequently better predictive models. We added in features to test their effects on the model. Our final model (M8) includes:
+* sqft_living
+* presence of waterfront
+* presence of basement
+* zip code
+* quality of view
+* condition of house
+* number of floors
 
 ## Regression Results
 ## Recommendations and Conclusions
